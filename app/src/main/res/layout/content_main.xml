@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nazri.restaurantfoodrecognizer.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/mainOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/photoButon"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="92dp"
+            android:layout_toStartOf="@+id/btnGoHome"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+            android:text="Take Photo" />
+
+        <ImageButton
+            android:id="@+id/btnGoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="78dp"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_home_black_40dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/photoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageToolsLayout">
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white_transparent"
+            android:gravity="center"
+            android:text="Recognition result here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="434dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imageToolsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/start_recognition"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:text="Start Recognition"
+            app:cornerRadius="4dp"
+            android:textColor="@android:color/white"
+            app:fButtonColor="@color/btnSignActive"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+    </RelativeLayout>
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        app:cropInitialCropWindowPaddingRatio="0">
+
+    </com.theartofdev.edmodo.cropper.CropImageView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainOptionsLayout"
+        android:layout_marginEnd="66dp"
+        android:layout_toStartOf="@+id/textView3"
+        android:text="Open Camera"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mainOptionsLayout"
+        android:layout_marginEnd="69dp"
+        android:text="Back to Home"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "123386361203",
+    "firebase_url": "https://restaurantfoodrecognizerv2.firebaseio.com",
+    "project_id": "restaurantfoodrecognizerv2",
+    "storage_bucket": "restaurantfoodrecognizerv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123386361203:android:e1c4a5ee6f0eaba4",
+        "android_client_info": {
+          "package_name": "com.nazri.restaurantfoodrecognizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123386361203-hs2ljjinsfi5dhcbu4316dtclvmro9gi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0i_DONnYTjZBbhbPj6Mzt07jm0H3IIqg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
